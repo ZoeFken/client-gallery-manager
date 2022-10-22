@@ -1,0 +1,44 @@
+.grid:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.grid-sizer,
+.grid-item {
+	width:  calc( ( 100% - 20px ) / 3 );
+	margin-bottom: 10px;
+}
+
+.grid-item {
+	float: left;
+}
+
+.grid-item img {
+	display: block;
+	max-width: 100%;
+}
+
+@media (max-width: 768px) {
+	.grid-sizer,
+	.grid-item {
+		width:  calc( ( 100% - 10px ) / 2 );
+		margin-bottom: 10px;
+	}
+
+	#nav-feather {
+		display: none !important;
+	}
+
+	.border-rechts {
+		border-right: none !important;
+	}
+
+	.sticky-top {
+		position: initial !important;
+	}
+
+	.functionality-align {
+		text-align: left;
+	}
+}

@@ -1,0 +1,41 @@
+#login-left {
+	background: url('#{$imagepath}login-image.jpg');
+	background-size: cover;
+	background-position: center;
+	border-radius: 20px 0px 0px 20px;
+}
+
+.align-items-center {
+	display: flex; 
+	justify-content: center;
+}
+
+.login-block {
+	width: 35%;
+	background-color: $bg-extra;
+}
+
+@media screen and (max-width: 768px) {
+	#login-left {
+	  	display: none;
+	}
+
+	#login-right {
+		width : 98%;
+		border-radius: 20px 20px 20px 20px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	#login-img {
+		display: none;
+	}
+
+	#login-right {
+		border-radius: 0px 20px 20px 0px;
+	}
+
+	#nav-text {
+		display: none !important;
+	}
+}

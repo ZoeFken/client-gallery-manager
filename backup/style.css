@@ -1,0 +1,280 @@
+/* 
+* Base colors:
+* Dark Purple #a850c1 
+* Light Purple #dc69fe
+* Dark Blue #4c8ca6
+* Light Blue #66bbdd
+*/
+
+body, html {
+	height: 100%;
+	margin: 0 2% 0 2%;
+}
+
+.width-1275 {
+	width: 100%;
+	max-width: 1275px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.no-hover:hover {
+	text-decoration: none;
+}
+
+.banner {
+	height: 200px;
+}
+
+.delete {
+	position: absolute;
+	top: 10px;
+	right: 0px;
+	width: 50px;
+	height: 50px;
+}
+
+/* Navigatie */
+.navbar-brand img {
+	height: 75px;
+	padding: 0;
+	margin: 0;
+	left: 0;
+}
+
+/* Iconen */
+.feather {
+	width: 15px;
+	height: 15px;
+	stroke: currentColor;
+	stroke-width: 2;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	fill: none;
+}
+
+/* Text */
+.display-5{
+	font-size: 1.5rem;
+	font-weight: 300;
+	line-height: 1.2;
+}
+
+/* Kleur aanpassingen */
+.dark-blue {
+	color: #4c8ca6;
+}
+
+.gallery-color {
+	background-color: #c3e0ec;
+}
+
+/* Overview */
+.table-responsive {
+	overflow-x: hidden !important; 
+}
+
+/* Login Form */
+.login-page {
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+.login-clean {
+	padding: 20px 0;
+}
+
+@media (min-width: 768px) {
+	.login-small {
+		max-width: 460px;
+		width: 90%;
+		margin: 0 auto;
+		padding: 40px;
+		border-radius: 25px;
+		color: #505e6c;
+		-webkit-box-shadow: 0px 0px 11px -1px rgba(0,0,0,0.44);
+		-moz-box-shadow: 0px 0px 11px -1px rgba(0,0,0,0.44);
+		box-shadow: 0px 0px 11px -1px rgba(0,0,0,0.44);
+	}
+
+	#nav-text {
+		display: none !important;
+	}
+
+	.functionality-align {
+		text-align: right;
+	}
+}
+
+.login-clean .illustration {
+	text-align: center;
+	padding: 0 0 20px;
+	font-size: 100px;
+	color: #a850c1;
+}
+
+.login-clean form .form-control {
+	background: #f7f9fc;
+	border: none;
+	border-bottom: 1px solid #66bbdd;
+	border-radius: 0;
+	box-shadow: none;
+	outline: none;
+	color: inherit;
+	text-indent: 8px;
+	height: 42px;
+}
+
+.form_group {
+	margin: 1px;
+}
+
+/* Masonry */
+.grid:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.grid-sizer,
+.grid-item {
+	width:  calc( ( 100% - 20px ) / 3 );
+	margin-bottom: 10px;
+}
+
+.grid-item {
+	float: left;
+}
+
+.grid-item img {
+	display: block;
+	max-width: 100%;
+}
+
+.border-rechts {
+	border-right: 1px solid #dee2e6;
+}
+
+@media (max-width: 768px) {
+	.grid-sizer,
+	.grid-item {
+		width:  calc( ( 100% - 10px ) / 2 );
+		margin-bottom: 10px;
+	}
+
+	#nav-feather {
+		display: none !important;
+	}
+
+	.border-rechts {
+		border-right: none !important;
+	}
+
+	.sticky-top {
+		position: initial !important;
+	}
+
+	.functionality-align {
+		text-align: left;
+	}
+}
+
+/* Selectie */
+.selected {
+	position: absolute;
+	bottom: 0;
+	right: 0px;
+	width: 50px;
+	height: 50px;
+	border-top: 5px Solid #f8f9fa;
+	border-left: 5px Solid #f8f9fa;
+}
+
+.Lightbox-Selected {
+	z-index: 1300;
+	visibility: hidden;
+	position: fixed;
+	bottom: 25px;
+	right: 25%;
+	left: 25%;
+	height: 30px;
+}
+
+.is {
+	background-color: #78f75f;
+	background-image: url("../images/minus.svg");
+}
+
+.isNot {
+	background-color: #f75f5f;
+	background-image: url("../images/plus.svg");
+}
+
+.locked {
+	background-color: #22aeb5;
+	background-image: url("../images/lock.svg");
+}
+
+.is, .isNot, .locked {
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.selected.is, .selected.isNot, .selected.locked {
+	background-size: 50% 50%;
+}
+
+.Lightbox-Selected.is, .Lightbox-Selected.isNot, .Lightbox-Selected.Locked {
+	background-size: 75% 75%;
+}
+
+.selection-link {
+	z-index: 1300;
+    display:inline-block;
+    width:100%;
+    height:100%;
+}
+
+/* Panel */
+.panel {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05)
+}
+
+.panel.panel-container {
+    padding-top: 20px
+}
+
+.panel .panel-widget {
+    padding: 10px 0;
+    position: relative;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+    background: none;
+    text-align: center;
+    color: #333
+}
+
+.panel .panel-widget .large {
+    color: #373b45;
+    font-size: 3em
+}
+
+.panel .panel-widget .medium {
+    color: #373b45;
+    font-size: 1.5em
+}
+
+.panel .panel-icon {
+    height: 40px
+}
+
+.panel .panel-icon .feather {
+    width: auto;
+    height: 100%
+}

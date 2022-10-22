@@ -1,0 +1,1 @@
+feather.replace({ class: 'feather' })

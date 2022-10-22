@@ -1,0 +1,75 @@
+.selected {
+	position: absolute;
+	bottom: 0;
+	right: 0px;
+	width: 50px;
+	height: 50px;
+	border-top: 5px Solid $bg-extra;
+	border-left: 5px Solid $bg-extra;
+}
+
+#imagename {
+	z-index: 50;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	color: $bg-light;
+	background-color: $link-color;
+	padding: 2px 5px 2px 5px;
+}
+
+#lightbox-imagename {
+	z-index: 50;
+	position: absolute;
+	color: $dark_gray;
+	padding: 2px 5px 2px 5px;
+}
+
+.Lightbox-Selected {
+	z-index: 1300;
+	visibility: hidden;
+	position: fixed;
+	bottom: 25px;
+	right: 25%;
+	left: 25%;
+	height: 30px;
+}
+
+.is {
+	background-color: $is;
+	background-image: url("#{$imagepath}minus.svg");
+}
+
+.isNot {
+	background-color: $isNot;
+	background-image: url("#{$imagepath}plus.svg");
+}
+
+.locked {
+	background-color: $locked;
+	background-image: url("#{$imagepath}lock.svg");
+}
+
+.noSelection {
+	background-color: $link-color;
+}
+
+.is, .isNot, .locked, .noSelection {
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.selected.is, .selected.isNot, .selected.locked, .selected.noSelection {
+	background-size: 50% 50%;
+}
+
+.Lightbox-Selected.is, .Lightbox-Selected.isNot, .Lightbox-Selected.Locked, .Lightbox-Selected.noSelection {
+	background-size: 75% 75%;
+}
+
+.selection-link {
+	z-index: 1300;
+    display:inline-block;
+    width:100%;
+    height:100%;
+}

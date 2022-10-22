@@ -1,0 +1,67 @@
+body, html {
+	height: 100%;
+	margin: 0 2% 0 2%;
+}
+
+.width-1275 {
+	width: 100%;
+	max-width: 1275px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.no-hover:hover {
+	text-decoration: none;
+}
+
+.banner {
+	height: 200px;
+}
+
+.delete {
+	position: absolute;
+	top: 10px;
+	right: 0px;
+	width: 50px;
+	height: 50px;
+}
+
+// Navigatie
+.navbar-brand img {
+	height: 75px;
+	padding: 0;
+	margin: 0;
+	left: 0;
+}
+
+// Iconen
+.feather {
+	width: 15px;
+	height: 15px;
+	stroke: currentColor;
+	stroke-width: 2;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	fill: none;
+}
+
+// Text
+.display-5{
+	font-size: 1.5rem;
+	font-weight: 300;
+	line-height: 1.2;
+}
+
+// Kleur aanpassingen
+.dark-blue {
+	color: $link-color;
+}
+
+.gallery-color {
+	background-color: $bg-light;
+}
+
+// Overview
+.table-responsive {
+	overflow-x: hidden !important; 
+}

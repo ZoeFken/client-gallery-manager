@@ -1,0 +1,6 @@
+{
+    "require": {
+        "mpdf/mpdf": "^8.0",
+        "paynl/sdk": "^1.5"
+    }
+}
