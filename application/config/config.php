@@ -326,7 +326,7 @@ $config['cache_query_string'] = FALSE;
 | https://codeigniter.com/user_guide/libraries/encryption.html
 |
 */
-$config['encryption_key'] = 'z$C&E)H@McQfTjWn';
+$config['encryption_key'] = 'xxx';
 
 /*
 |--------------------------------------------------------------------------
@@ -532,5 +532,5 @@ $config['proxy_ips'] = '';
 | De sleutels voor het gebruik van de reCaptcha van google
 */
 
-$config['google_key'] = '6LfBbF4UAAAAAK3cCd881rfdlj7dWJ_v0r9xq9KB';
-$config['google_secret'] = '6LfBbF4UAAAAANcouS_DDRbpy3fFxTD0QyRfz6bW';
+$config['google_key'] = 'xxx';
+$config['google_secret'] = 'xxx';

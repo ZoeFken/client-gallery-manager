@@ -15,6 +15,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | -------------------------------------------------------------------
 |
 */
-$config['setTokenCode'] = 'AT-0051-6205';
-$config['setApiToken']  = '8b9470e7a5f38fe93e4126a9244ba73c3cd9cba6';
-$config['setServiceId'] = 'SL-3988-8111';
+$config['setTokenCode'] = 'xxx';
+$config['setApiToken']  = 'xxx';
+$config['setServiceId'] = 'xxx';
